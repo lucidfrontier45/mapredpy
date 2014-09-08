@@ -1,7 +1,7 @@
 mapred.py
 ===
 This is a one-file python MapReduce template.
-You can use this for prototyping of you hadoop job.
+You can use this for prototyping your hadoop job.
 
 How to use?
 ---
