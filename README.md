@@ -9,10 +9,12 @@ Subclass `_BaseMapper` and `_BaseReducer` and implement their `map` and `reduce`
 Optionally, you can add some initialization task to `__init__` of your Mapper and Reducer Class.
 
 When run in local for debug to show in stdout
+
 `cat <file> | ./mapred.py -m mapper | sort | ./mapred.py -m reducer`
 
 When run in Hadoop cluster to output in HDFS
-`hadoop jar <path_to_hadoop_streaming-jar> --files mapred.py -mapper './mapred.py -m mapper' -reducer './mapred.py -m reducer' -input <input in HDFS> -output <output in HDFS>
+
+`hadoop jar <path_to_hadoop_streaming-jar> --files mapred.py -mapper './mapred.py -m mapper' -reducer './mapred.py -m reducer' -input <input in HDFS> -output <output in HDFS>`
 
 Note
 ---
